@@ -10,29 +10,22 @@ Please consider starring the project to show your <font color="red">❤</font> a
 [![License](https://badgen.net/npm/license/@evillt/latest-version)](./LICENSE)
 [![donate](https://badgen.net/badge/support%20me/donate/f2a)](https://donate.evila.me)
 
-## Comparison [`latest-version-cli`](https://github.com/sindresorhus/latest-version-cli)
+## Comparison [latest-version-cli](https://github.com/sindresorhus/latest-version-cli)
 
 - Support multiple packages input
 - Pretty output
 
 ![image](https://unpkg.com/@evillt/media/projects/latest-version/main.svg)
 
-## Usage
-
-One-off usage via `npx`:
-
-```sh
-$ npx @evillt/latest-version [...packages]
-
-# Example
-$ npx @evillt/latest-version loading-screen poi
-```
-
-Or using it globally:
+## Install
 
 ```sh
 $ npm i -g @evillt/latest-version
+```
 
+## Usage
+
+```sh
 $ latest-version vue react
 ```
 
