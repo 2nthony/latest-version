@@ -2,13 +2,39 @@
 
 > Get the latest version of npm packages
 
-Please consider starring the project to show your ❤️ and support.
+Please consider starring the project to show your <font color="red">❤</font> and support.
 
-[![NPM version](https://badgen.net/npm/v/latest-version?icon=npm)](https://npmjs.com/package/latest-version)
-[![NPM download](https://badgen.net/npm/dm/latest-version?icon=npm)](https://npmjs.com/package/latest-version)
+[![NPM version](https://badgen.net/npm/v/@evillt/latest-version?icon=npm)](https://npmjs.com/package/@evillt/latest-version)
+[![NPM download](https://badgen.net/npm/dm/@evillt/latest-version?icon=npm)](https://npmjs.com/package/@evillt/latest-version)
 [![CircleCI](https://badgen.net/circleci/github/evillt/latest-version?icon=circleci)](https://circleci.com/gh/evillt/latest-version/tree/master)
-[![License](https://badgen.net/npm/license/latest-version)](./LICENSE)
+[![License](https://badgen.net/npm/license/@evillt/latest-version)](./LICENSE)
 [![donate](https://badgen.net/badge/support%20me/donate/f2a)](https://donate.evila.me)
+
+## Comparison [`latest-version-cli`](https://github.com/sindresorhus/latest-version-cli)
+
+- Support multiple packages input
+- Pretty output
+
+![image](https://unpkg.com/@evillt/media/projects/latest-version/main.svg)
+
+## Usage
+
+One-off usage via `npx`:
+
+```sh
+$ npx @evillt/latest-version [...packages]
+
+# Example
+$ npx @evillt/latest-version loading-screen poi
+```
+
+Or using it globally:
+
+```sh
+$ npm i -g @evillt/latest-version
+
+$ latest-version vue react
+```
 
 ## Contributing
 
