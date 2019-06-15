@@ -1,0 +1,71 @@
+{
+  "name": "@evillt/latest-version",
+  "description": "Get the latest version of npm packages",
+  "version": "0.0.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "evillt/latest-version"
+  },
+  "author": "evillt <ijoec123@gmail.com> (https://evila.me)",
+  "bin": "dist/index.js",
+  "scripts": {
+    "lint": "xo --fix",
+    "test": "npm run lint",
+    "build": "ncc build cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@zeit/ncc": "^0.19.1",
+    "cac": "^6.5.2",
+    "chalk": "^2.4.2",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-rem": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.0.0-rc.13",
+    "latest-version": "^5.1.0",
+    "lint-staged": "^7.2.0",
+    "listr": "^0.14.3",
+    "prettier": "^1.17.0",
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "extends": [
+      "rem",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": [
+        "xo --fix",
+        "git add"
+      ],
+      "*.{json,md}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  },
+  "keywords": [
+    "latest",
+    "version",
+    "npm",
+    "package",
+    "package.json",
+    "current",
+    "module"
+  ]
+}
