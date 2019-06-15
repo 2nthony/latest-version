@@ -18,7 +18,7 @@ cli
       const tasks = new Listr(
         packages.map(pkg => {
           return {
-            title: `pkg`,
+            title: pkg,
             task: async (_, task) => {
               const version = await latestVersion(pkg)
 
