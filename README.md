@@ -17,15 +17,25 @@ Please consider starring the project to show your <font color="red">❤</font> a
 
 ![image](https://unpkg.com/@evillt/media/projects/latest-version/main.svg)
 
-## Install
+## Usage
+
+One-off usage via `npx`:
+
+```sh
+$ npx @evillt/latest-version [...packages]
+
+# Example
+$ npx @evillt/latest-version loading-screen poi
+```
+
+Or using it globally:
 
 ```sh
 $ npm i -g @evillt/latest-version
-```
 
-## Usage
+# Or using yarn
+$ yarn global add @evillt/latest-version
 
-```sh
 $ latest-version vue react
 ```
 
