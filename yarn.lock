@@ -50,11 +50,6 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@zeit/ncc@^0.19.1":
-  version "0.19.1"
-  resolved "https://registry.npmjs.org/@zeit/ncc/-/ncc-0.19.1.tgz#8914765cff5ddef5645f56de3ce244d3e5000e58"
-  integrity sha512-E7Erja/jzyE8tjfhMgSl+uDX200CGVfSKNcYYiZY2Ds2yHkD9ktDslu6qYZVoBw5ftzHSzv39J40u6mecno1wg==
-
 acorn-jsx@^5.0.0:
   version "5.0.1"
   resolved "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.0.1.tgz#32a064fd925429216a09b141102bfdd185fae40e"
