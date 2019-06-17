@@ -15,7 +15,7 @@ Please consider starring the project to show your <font color="red">❤</font> a
 - Support multiple packages input
 - Pretty output
 
-![image](https://unpkg.com/@evillt/media/projects/latest-version/main.svg)
+![image](https://unpkg.com/@evillt/media@latest/projects/latest-version/main.svg)
 
 ## Usage
 
