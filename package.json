@@ -19,7 +19,7 @@
   },
   "scripts": {
     "lint": "xo --fix",
-    "test": "npm run lint"
+    "test": "npm run lint && ava --verbose"
   },
   "dependencies": {
     "cac": "^6.5.2",
@@ -28,9 +28,11 @@
     "listr": "^0.14.3"
   },
   "devDependencies": {
+    "ava": "^2.1.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-config-rem": "^4.0.0",
     "eslint-plugin-prettier": "^3.0.0",
+    "execa": "^1.0.0",
     "husky": "^1.0.0-rc.13",
     "lint-staged": "^7.2.0",
     "prettier": "^1.17.0",
