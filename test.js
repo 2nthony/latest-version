@@ -18,3 +18,13 @@ test('with tag', async t => {
   const { stdout } = await execa('./cli.js', ['vuepress@next'])
   t.truthy(stdout)
 })
+
+test('with registry', async t => {
+  const { stdout } = await execa('./cli.js', [
+    'git-delete-branch',
+    'poi',
+    '--registry',
+    'https://registry.npm.taobao.org'
+  ])
+  t.truthy(stdout)
+})

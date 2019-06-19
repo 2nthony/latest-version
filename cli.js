@@ -8,6 +8,7 @@ const cli = cac('latest-version')
 cli
   .command('[...packages]', 'Get the latest version of npm packages')
   .option('-V, --verbose', 'Verbose output')
+  .option('--registry <url>', 'Registry url')
   .action(
     handleError(async (packages, options) => {
       if (packages.length === 0) return cli.outputHelp()
@@ -24,7 +25,8 @@ cli
             title: `${name}${chalk.dim(rawTag)}`,
             task: async (_, task) => {
               const version = await latestVersion(name, {
-                version: tag
+                version: tag,
+                registryUrl: options.registry
               })
 
               task.title = `${task.title}${padRight(

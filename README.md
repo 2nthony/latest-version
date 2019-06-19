@@ -13,6 +13,7 @@ Please consider starring the project to show your <font color="red">❤</font> a
 ## Comparison [latest-version-cli](https://github.com/sindresorhus/latest-version-cli)
 
 - Support multiple packages input
+- Support specify registry
 - Pretty output
 
 ![image](https://unpkg.com/@evillt/media@latest/projects/latest-version/main.svg)
@@ -38,6 +39,18 @@ $ yarn global add @evillt/latest-version
 
 $ latest-version vue react
 ```
+
+## CLI
+
+`latest-version [...packages] [option]`
+
+### `packages`
+
+### `options`
+
+#### `--registry <url>`
+
+Use the specified registry instead of npm registry
 
 ## Contributing
 
