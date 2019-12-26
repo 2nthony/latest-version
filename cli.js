@@ -8,7 +8,7 @@ const cli = cac('latest-version')
 cli
   .command('[...packages]', 'Get the latest version of npm packages')
   .option('-V, --verbose', 'Verbose output')
-  .option('--registry <url>', 'Registry url')
+  .option('-r, --registry <url>', 'Registry url')
   .action(
     handleError(async (packages, options) => {
       if (packages.length === 0) return cli.outputHelp()
