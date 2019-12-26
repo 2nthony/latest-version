@@ -46,11 +46,13 @@ $ latest-version vue react
 
 ### `packages`
 
+The packages.
+
 ### `options`
 
-#### `--registry <url>`
+#### `-r, --registry <url>`
 
-Use the specified registry instead of npm registry
+Use the specified registry instead of npm registry.
 
 ## Contributing
 
